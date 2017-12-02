@@ -3,7 +3,7 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 
   get '/:p' do
-    (params[:p].to_i).to_s
+    (params[:p].to_i**2).to_s
   end
 
   get '/reversename/:name' do |name|
