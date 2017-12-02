@@ -3,7 +3,7 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 
   get '/:p' do
-    Hello who are you?
+    "Hello who are you?"
   end
 
   get '/reversename/:name' do |name|
